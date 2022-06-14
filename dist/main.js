@@ -1,1 +1,0 @@
-(()=>{var o={531:o=>{o.exports={log1:o=>console.log(o)}}},r={};(function e(t){var s=r[t];if(void 0!==s)return s.exports;var n=r[t]={exports:{}};return o[t](n,n.exports,e),n.exports})(531).log1("Yes")})();
