@@ -1,10 +1,11 @@
-const getUsersModule= () =>
-    import(/* webpackChunkName: "usersApi" */"./common/usersAPI")
+import _ from "lodash"
+import "./style.css"
 
-const btn = document.getElementById("btn")
+function component() {
+    const element = document.createElement("div")
+    element.innerHTML = _.join(["Hello", "webpack"], " ")
 
-btn.addEventListener("click", () => {
-    getUsersModule().then(({ getUsers }) => {
-        getUsers().then((json) => console.log(json))
-    })
-})
+    return element
+}
+
+document.body.appendChild(component())
